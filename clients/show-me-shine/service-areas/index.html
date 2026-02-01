@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Service Areas | Show Me Shine</title>
+  <meta name="description" content="See the areas Show Me Shine serves for residential and commercial pressure washing." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Show Me Shine</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="/services/">Services</a>
+          <a href="/before-after/">Before & After</a>
+          <a href="/service-areas/" aria-current="page">Service Areas</a>
+          <a href="/about/">About</a>
+          <a class="btn btn--primary" href="/contact/">Get a Free Estimate</a>
+        </nav>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/services/">Services</a>
+        <a href="/before-after/">Before & After</a>
+        <a href="/service-areas/" aria-current="page">Service Areas</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/">Get a Free Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>Service Areas</h1>
+          <p class="lead">We serve the local area with reliable scheduling and clear communication.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="/contact/">Get a Free Estimate</a>
+            <a class="btn btn--ghost" href="/services/">View Services</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Areas we serve</h2>
+        <p class="lead">Replace this list with confirmed cities/neighborhoods.</p>
+        <div class="card">
+          <ul>
+            <li>City / Neighborhood</li>
+            <li>City / Neighborhood</li>
+            <li>City / Neighborhood</li>
+            <li>City / Neighborhood</li>
+          </ul>
+        </div>
+        <p class="small" style="margin-top:12px;">If you’re outside this list, reach out—we may still be able to help depending on schedule.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Show Me Shine. All rights reserved.</small>
+      <div class="small">Residential • Commercial • Bundles</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

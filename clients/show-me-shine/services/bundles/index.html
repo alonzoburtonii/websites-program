@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bundles | Show Me Shine</title>
+  <meta name="description" content="Combine pressure washing services for convenience and better value." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Show Me Shine</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="/services/" aria-current="page">Services</a>
+          <a href="/before-after/">Before & After</a>
+          <a href="/service-areas/">Service Areas</a>
+          <a href="/about/">About</a>
+          <a class="btn btn--primary" href="/contact/">Get a Free Estimate</a>
+        </nav>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/services/" aria-current="page">Services</a>
+        <a href="/before-after/">Before & After</a>
+        <a href="/service-areas/">Service Areas</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/">Get a Free Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>Bundles</h1>
+          <p class="lead">Combine services for convenience and a cleaner finish across your property.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="/contact/">Get a Free Estimate</a>
+            <a class="btn btn--ghost" href="/services/">Back to Services</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Popular bundle examples</h2>
+        <div class="card-grid">
+          <article class="card"><h3>Driveway + Walkways</h3><p class="small">Brighten high-traffic surfaces together.</p></article>
+          <article class="card"><h3>Siding + Patio</h3><p class="small">Refresh exterior appearance in one visit.</p></article>
+          <article class="card"><h3>Full Exterior Refresh</h3><p class="small">Combine multiple areas for an overall clean.</p></article>
+        </div>
+        <p class="small" style="margin-top:12px;">Bundles depend on surfaces, size, and access. We’ll confirm scope before pricing.</p>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-band-row">
+        <div>
+          <h2>Want a bundled estimate?</h2>
+          <p class="lead">Tell us what areas you’d like cleaned.</p>
+        </div>
+        <a class="btn btn--primary" href="/contact/">Get a Free Estimate</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Show Me Shine. All rights reserved.</small>
+      <div class="small">Residential • Commercial • Bundles</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
