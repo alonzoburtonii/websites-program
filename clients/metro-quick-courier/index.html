@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fast, Reliable Courier Delivery | Metro Quick Courier</title>
+  <meta name="description" content="Same-day delivery, scheduled routes, and on-demand courier services for businesses. Reliable drivers, clear communication, and dependable timing." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Metro Quick Courier</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="/services/">Services</a>
+          <a href="/industries/">Industries</a>
+          <a href="/how-it-works/">How It Works</a>
+          <a href="/about/">About</a>
+          <a class="btn btn--primary" href="/contact/">Request Delivery Quote</a>
+        </nav>
+
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/services/">Services</a>
+        <a href="/industries/">Industries</a>
+        <a href="/how-it-works/">How It Works</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/">Request Delivery Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>Courier Delivery Built for Business.</h1>
+          <p class="lead">Same-day delivery, scheduled routes, and on-demand support — with reliable timing and clear communication.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="/contact/">Request Delivery Quote</a>
+            <a class="btn btn--ghost" href="/services/">View Services</a>
+          </div>
+          <p class="small">We’ll confirm scope, pickup/drop-off details, and timing before final pricing.</p>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <!-- Replace with a vehicle/delivery image or short muted loop -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF / TRUST -->
+    <section class="section">
+      <div class="container">
+        <h2>Trusted Delivery Support</h2>
+        <p class="lead">Designed for teams that need dependable handoffs and predictable service.</p>
+        <div class="card-grid">
+          <article class="card"><h3>Reliable timing</h3><p class="small">Clear expectations and consistent follow-through.</p></article>
+          <article class="card"><h3>Secure handling</h3><p class="small">Careful transport and professional drivers.</p></article>
+          <article class="card"><h3>Clear updates</h3><p class="small">Communication that keeps your team informed.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SNAPSHOT -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Services</h2>
+        <p class="lead">Choose the delivery model that fits your operation.</p>
+        <div class="card-grid">
+          <a class="card" href="/services/same-day-delivery/"><h3>Same-Day Delivery</h3><p class="small">Time-sensitive deliveries with dependable turnaround.</p></a>
+          <a class="card" href="/services/scheduled-routes/"><h3>Scheduled Routes</h3><p class="small">Recurring pickups and deliveries for routine operations.</p></a>
+          <a class="card" href="/services/on-demand/"><h3>On-Demand Courier</h3><p class="small">Flexible courier support when volume spikes or needs change.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFFERENTIATION -->
+    <section class="section">
+      <div class="container">
+        <h2>Operational Fit</h2>
+        <div class="card">
+          <ul>
+            <li><strong>B2B-focused</strong> — built around business workflows and expectations.</li>
+            <li><strong>Flexible coverage</strong> — one-off jobs or recurring routes.</li>
+            <li><strong>Simple onboarding</strong> — clarify details, then execute reliably.</li>
+          </ul>
+        </div>
+        <div class="cta-row" style="margin-top:14px;">
+          <a class="btn btn--ghost" href="/industries/">See Industries We Serve</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2>How It Works</h2>
+        <ol class="steps">
+          <li class="step"><h3>Request</h3><p class="small">Share pickup/drop-off details, timing, and any constraints.</p></li>
+          <li class="step"><h3>Confirm</h3><p class="small">We confirm availability, route fit, and pricing.</p></li>
+          <li class="step"><h3>Deliver</h3><p class="small">Courier pickup, transport, and completion with clear updates.</p></li>
+        </ol>
+        <div class="cta-row" style="margin-top:14px;">
+          <a class="btn btn--ghost" href="/how-it-works/">View Full Process</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section cta-band">
+      <div class="container cta-band-row">
+        <div>
+          <h2>Need courier coverage?</h2>
+          <p class="lead">Tell us what you’re moving and when — we’ll follow up quickly.</p>
+        </div>
+        <a class="btn btn--primary" href="/contact/">Request Delivery Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Metro Quick Courier. All rights reserved.</small>
+      <div class="small">Same-day • Scheduled routes • On-demand</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>On-Demand Courier | Metro Quick Courier</title>
+  <meta name="description" content="Flexible on-demand courier support for changing delivery needs and volume spikes." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Metro Quick Courier</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="/services/" aria-current="page">Services</a>
+          <a href="/industries/">Industries</a>
+          <a href="/how-it-works/">How It Works</a>
+          <a href="/about/">About</a>
+          <a class="btn btn--primary" href="/contact/">Request Delivery Quote</a>
+        </nav>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/services/" aria-current="page">Services</a>
+        <a href="/industries/">Industries</a>
+        <a href="/how-it-works/">How It Works</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/">Request Delivery Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>On-Demand Courier</h1>
+          <p class="lead">Extra courier capacity when needs change — responsive and reliable.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="/contact/">Request Delivery Quote</a>
+            <a class="btn btn--ghost" href="/services/">Back to Services</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Use cases</h2>
+        <div class="card-grid">
+          <article class="card"><h3>Overflow support</h3><p class="small">When volume spikes unexpectedly.</p></article>
+          <article class="card"><h3>Last-minute delivery</h3><p class="small">Short-notice runs with clear expectations.</p></article>
+          <article class="card"><h3>Flexible coverage</h3><p class="small">Support across locations as needs shift.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Frequently asked</h2>
+        <div class="card">
+          <h3>How quickly can you respond?</h3>
+          <p class="small">Availability depends on timing and route load. Send your details and we’ll confirm quickly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-band-row">
+        <div>
+          <h2>Need on-demand support?</h2>
+          <p class="lead">Send your request and we’ll confirm next steps.</p>
+        </div>
+        <a class="btn btn--primary" href="/contact/">Request Delivery Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Metro Quick Courier. All rights reserved.</small>
+      <div class="small">Same-day • Scheduled routes • On-demand</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
