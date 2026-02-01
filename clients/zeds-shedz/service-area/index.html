@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Service Area | Zed’s Shedz</title>
+  <meta name="description" content="See where Zed’s Shedz provides custom shed builds and installation." />
+
+  <link rel="stylesheet" href="../../../shared/base.css" />
+  <link rel="stylesheet" href="../../../shared/components.css" />
+  <link rel="stylesheet" href="../brand.css" />
+
+  <script defer src="../../../shared/components.js"></script>
+  <script defer src="../../../shared/motion.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Zed’s Shedz</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="/services/">Services</a>
+          <a href="/gallery/">Gallery</a>
+          <a href="/process/">Process</a>
+          <a href="/service-area/" aria-current="page">Service Area</a>
+          <a href="/about/">About</a>
+          <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+        </nav>
+
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/services/">Services</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/process/">Process</a>
+        <a href="/service-area/" aria-current="page">Service Area</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>Service Area</h1>
+          <p class="lead">We build and install custom sheds across our local service region. Not sure if you’re in-range? Reach out.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+            <a class="btn btn--ghost" href="/services/">View Services</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Areas we serve</h2>
+        <p class="lead">Replace the list below with real cities/neighborhoods once confirmed.</p>
+
+        <div class="card">
+          <ul>
+            <li>City / Neighborhood</li>
+            <li>City / Neighborhood</li>
+            <li>City / Neighborhood</li>
+            <li>City / Neighborhood</li>
+            <li>City / Neighborhood</li>
+          </ul>
+        </div>
+
+        <p class="small" style="margin-top:12px;">If you’re outside this list, we may still be able to help depending on project scope and scheduling.</p>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-band-row">
+        <div>
+          <h2>Not sure if you’re in our area?</h2>
+          <p class="lead">Send your location and project details — we’ll confirm quickly.</p>
+        </div>
+        <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Zed’s Shedz. All rights reserved.</small>
+      <div class="small">Local builds • Durable materials • Clear communication</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Zed’s Shedz</title>
+  <meta name="description" content="About Zed’s Shedz — local craftsmanship, durable builds, and clear communication from quote to install." />
+
+  <link rel="stylesheet" href="../../../shared/base.css" />
+  <link rel="stylesheet" href="../../../shared/components.css" />
+  <link rel="stylesheet" href="../brand.css" />
+
+  <script defer src="../../../shared/components.js"></script>
+  <script defer src="../../../shared/motion.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Zed’s Shedz</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="/services/">Services</a>
+          <a href="/gallery/">Gallery</a>
+          <a href="/process/">Process</a>
+          <a href="/service-area/">Service Area</a>
+          <a href="/about/" aria-current="page">About</a>
+          <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+        </nav>
+
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/services/">Services</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/process/">Process</a>
+        <a href="/service-area/">Service Area</a>
+        <a href="/about/" aria-current="page">About</a>
+        <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>About Zed’s Shedz</h1>
+          <p class="lead">We build custom sheds with durable materials and straightforward communication — from quote to installation.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+            <a class="btn btn--ghost" href="/gallery/">See Recent Builds</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What we value</h2>
+        <div class="card">
+          <ul>
+            <li><strong>Quality</strong> — builds that hold up over time.</li>
+            <li><strong>Clarity</strong> — simple, honest communication.</li>
+            <li><strong>Craft</strong> — details handled with care.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>How we work</h2>
+        <p class="lead">We keep the process simple: understand the need, build to spec, deliver reliably.</p>
+        <div class="cta-row">
+          <a class="btn btn--ghost" href="/process/">View the Process</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-band-row">
+        <div>
+          <h2>Want a custom quote?</h2>
+          <p class="lead">Tell us what you’re building and where it will go.</p>
+        </div>
+        <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Zed’s Shedz. All rights reserved.</small>
+      <div class="small">Local builds • Durable materials • Clear communication</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

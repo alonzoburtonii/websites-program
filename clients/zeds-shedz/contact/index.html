@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request a Quote | Zed’s Shedz</title>
+  <meta name="description" content="Request a quote for a custom shed build. Tell us what you need and we’ll follow up with next steps." />
+
+  <link rel="stylesheet" href="../../../shared/base.css" />
+  <link rel="stylesheet" href="../../../shared/components.css" />
+  <link rel="stylesheet" href="../brand.css" />
+
+  <script defer src="../../../shared/components.js"></script>
+  <script defer src="../../../shared/motion.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Zed’s Shedz</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="/services/">Services</a>
+          <a href="/gallery/">Gallery</a>
+          <a href="/process/">Process</a>
+          <a href="/service-area/">Service Area</a>
+          <a href="/about/">About</a>
+          <a class="btn btn--primary" href="/contact/" aria-current="page">Request a Quote</a>
+        </nav>
+
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/services/">Services</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/process/">Process</a>
+        <a href="/service-area/">Service Area</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/" aria-current="page">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>Request a Quote</h1>
+          <p class="lead">Tell us what you’re building and where it will go. We’ll follow up with next steps and any clarifying questions.</p>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form class="form" name="quote" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="quote" />
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" autocomplete="tel" />
+          </div>
+
+          <div class="field">
+            <label for="details">Project details</label>
+            <textarea id="details" name="details" required placeholder="Size, use case, timeline, and location (if known)"></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit">Send Request</button>
+          <p class="small">By submitting, you agree we can contact you about your request.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>What happens next</h2>
+        <ol class="steps">
+          <li class="step"><h3>We review your request</h3><p class="small">We’ll confirm details and answer questions.</p></li>
+          <li class="step"><h3>We confirm timeline</h3><p class="small">Turnaround depends on scope and schedule.</p></li>
+          <li class="step"><h3>We provide a quote</h3><p class="small">Clear pricing and next steps.</p></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Zed’s Shedz. All rights reserved.</small>
+      <div class="small">Local builds • Durable materials • Clear communication</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

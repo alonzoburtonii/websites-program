@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | Zed’s Shedz</title>
+  <meta name="description" content="Explore custom shed services, storage solutions, and add-ons available from Zed’s Shedz." />
+
+  <link rel="stylesheet" href="../../../../shared/base.css" />
+  <link rel="stylesheet" href="../../../../shared/components.css" />
+  <link rel="stylesheet" href="../../brand.css" />
+
+  <script defer src="../../../../shared/components.js"></script>
+  <script defer src="../../../../shared/motion.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Zed’s Shedz</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="/services/" aria-current="page">Services</a>
+          <a href="/gallery/">Gallery</a>
+          <a href="/process/">Process</a>
+          <a href="/service-area/">Service Area</a>
+          <a href="/about/">About</a>
+          <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+        </nav>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/services/" aria-current="page">Services</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/process/">Process</a>
+        <a href="/service-area/">Service Area</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>Services</h1>
+          <p class="lead">Choose a build type, then we’ll tailor it to your space and needs.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="/contact/">Request a Quote</a>
+            <a class="btn btn--ghost" href="/gallery/">See Examples</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card-grid">
+          <a class="card" href="/services/custom-sheds/"><h3>Custom Sheds</h3><p class="small">Built to your specs and use case.</p></a>
+          <a class="card" href="/services/storage-solutions/"><h3>Storage Solutions</h3><p class="small">Organized layouts and practical upgrades.</p></a>
+          <a class="card" href="/services/add-ons/"><h3>Add-Ons & Options</h3><p class="small">Finish details and functional extras.</p></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Zed’s Shedz. All rights reserved.</small>
+      <div class="small">Local builds • Durable materials • Clear communication</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
