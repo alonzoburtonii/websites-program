@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Test Prep | Neighborhood Learning</title>
+  <meta name="description" content="Test prep with structured practice, strategy, and confidence-building support." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Neighborhood Learning</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="/programs/" aria-current="page">Programs</a>
+          <a href="/how-it-works/">How It Works</a>
+          <a href="/about/">About</a>
+          <a class="btn btn--primary" href="/contact/">Get Started</a>
+        </nav>
+
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/programs/" aria-current="page">Programs</a>
+        <a href="/how-it-works/">How It Works</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>Test Prep</h1>
+          <p class="lead">Structured practice and strategy that helps students perform with confidence.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="/contact/">Get Started</a>
+            <a class="btn btn--ghost" href="/programs/">Back to Programs</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What’s included</h2>
+        <div class="card-grid">
+          <article class="card"><h3>Study plan</h3><p class="small">Clear goals and weekly pacing.</p></article>
+          <article class="card"><h3>Strategy & practice</h3><p class="small">Approaches to common question types.</p></article>
+          <article class="card"><h3>Review & adjust</h3><p class="small">Focus where improvement matters most.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Frequently asked</h2>
+        <div class="card">
+          <h3>How far ahead should we start?</h3>
+          <p class="small">Earlier is better, but we can build an effective plan even with tighter timelines.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-band-row">
+        <div>
+          <h2>Want a prep plan?</h2>
+          <p class="lead">Tell us your test type and timeline.</p>
+        </div>
+        <a class="btn btn--primary" href="/contact/">Get Started</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Neighborhood Learning. All rights reserved.</small>
+      <div class="small">Tutoring • Test prep • Group learning</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Group Learning | Neighborhood Learning</title>
+  <meta name="description" content="Small-group learning sessions that build motivation, structure, and progress." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Neighborhood Learning</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="/programs/" aria-current="page">Programs</a>
+          <a href="/how-it-works/">How It Works</a>
+          <a href="/about/">About</a>
+          <a class="btn btn--primary" href="/contact/">Get Started</a>
+        </nav>
+
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/programs/" aria-current="page">Programs</a>
+        <a href="/how-it-works/">How It Works</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>Group Learning</h1>
+          <p class="lead">Small-group sessions that build structure, motivation, and shared momentum.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="/contact/">Get Started</a>
+            <a class="btn btn--ghost" href="/programs/">Back to Programs</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What it looks like</h2>
+        <div class="card-grid">
+          <article class="card"><h3>Small group sizes</h3><p class="small">Enough attention without losing momentum.</p></article>
+          <article class="card"><h3>Guided practice</h3><p class="small">Structured work and real-time feedback.</p></article>
+          <article class="card"><h3>Consistency</h3><p class="small">A repeatable rhythm that supports progress.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Frequently asked</h2>
+        <div class="card">
+          <h3>Is group learning right for my student?</h3>
+          <p class="small">Group learning works best for students who benefit from structure and peer momentum. We’ll help you choose.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-band-row">
+        <div>
+          <h2>Want to explore group options?</h2>
+          <p class="lead">Tell us goals and preferred schedule.</p>
+        </div>
+        <a class="btn btn--primary" href="/contact/">Get Started</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Neighborhood Learning. All rights reserved.</small>
+      <div class="small">Tutoring • Test prep • Group learning</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

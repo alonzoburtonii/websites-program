@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Neighborhood Learning</title>
+  <meta name="description" content="About Neighborhood Learning — supportive tutoring and test prep built around clear plans and measurable progress." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Neighborhood Learning</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="/programs/">Programs</a>
+          <a href="/how-it-works/">How It Works</a>
+          <a href="/about/" aria-current="page">About</a>
+          <a class="btn btn--primary" href="/contact/">Get Started</a>
+        </nav>
+
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/programs/">Programs</a>
+        <a href="/how-it-works/">How It Works</a>
+        <a href="/about/" aria-current="page">About</a>
+        <a class="btn btn--primary" href="/contact/">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>About Neighborhood Learning</h1>
+          <p class="lead">We help students build skills and confidence through supportive instruction and clear learning plans.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="/contact/">Get Started</a>
+            <a class="btn btn--ghost" href="/programs/">Explore Programs</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What we value</h2>
+        <div class="card">
+          <ul>
+            <li><strong>Support</strong> — instruction that builds confidence.</li>
+            <li><strong>Clarity</strong> — learning goals and expectations made simple.</li>
+            <li><strong>Progress</strong> — measurable improvement over time.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Neighborhood Learning. All rights reserved.</small>
+      <div class="small">Tutoring • Test prep • Group learning</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

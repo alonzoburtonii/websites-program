@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{PAGE_TITLE}} | {{CLIENT_NAME}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+  <link rel="stylesheet" href="/../../shared/base.css" />
+  <link rel="stylesheet" href="/../../shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+  <script defer src="/../../shared/components.js"></script>
+  <script defer src="/../../shared/motion.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">{{CLIENT_NAME}}</a>
+
+        <nav class="nav" aria-label="Primary">
+          {{NAV_ITEMS}}
+          <a class="btn btn--primary" href="{{PRIMARY_CTA_HREF}}">{{PRIMARY_CTA_LABEL}}</a>
+        </nav>
+
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">
+          Menu
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        {{NAV_ITEMS_MOBILE}}
+        <a class="btn btn--primary" href="{{PRIMARY_CTA_HREF}}">{{PRIMARY_CTA_LABEL}}</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- PAGE HERO -->
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>{{H1}}</h1>
+          <p class="lead">{{LEAD}}</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="{{PRIMARY_CTA_HREF}}">{{PRIMARY_CTA_LABEL}}</a>
+            {{SECONDARY_CTA}}
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <!-- Replace with <img> or <video muted autoplay loop playsinline> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE CONTENT -->
+    {{PAGE_CONTENT}}
+
+    <!-- FINAL CTA BAND -->
+    <section class="section cta-band">
+      <div class="container cta-band-row">
+        <div>
+          <h2>{{FINAL_CTA_TITLE}}</h2>
+          <p class="lead">{{FINAL_CTA_SUBHEAD}}</p>
+        </div>
+        <a class="btn btn--primary" href="{{PRIMARY_CTA_HREF}}">{{PRIMARY_CTA_LABEL}}</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> {{CLIENT_NAME}}. All rights reserved.</small>
+      <div class="small">{{FOOTER_LINE}}</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

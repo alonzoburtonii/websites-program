@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get a Free Estimate | Show Me Shine</title>
+  <meta name="description" content="Request a free estimate for residential or commercial pressure washing." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="logo" href="/">Show Me Shine</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="/services/">Services</a>
+          <a href="/before-after/">Before & After</a>
+          <a href="/service-areas/">Service Areas</a>
+          <a href="/about/">About</a>
+          <a class="btn btn--primary" href="/contact/" aria-current="page">Get a Free Estimate</a>
+        </nav>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+        <a href="/services/">Services</a>
+        <a href="/before-after/">Before & After</a>
+        <a href="/service-areas/">Service Areas</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/" aria-current="page">Get a Free Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <h1>Get a Free Estimate</h1>
+          <p class="lead">Tell us what needs cleaning and where. We’ll follow up to confirm scope and pricing.</p>
+        </div>
+        <div class="hero-media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form class="form" name="estimate" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="estimate" />
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="field">
+            <label for="address">Address / Area (optional)</label>
+            <input id="address" name="address" autocomplete="street-address" />
+          </div>
+
+          <div class="field">
+            <label for="details">What needs cleaning?</label>
+            <textarea id="details" name="details" required placeholder="Example: driveway + sidewalk, siding, patio, storefront, etc."></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit">Send Request</button>
+          <p class="small">By submitting, you agree we can contact you about your request.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small class="small">© <span id="year"></span> Show Me Shine. All rights reserved.</small>
+      <div class="small">Residential • Commercial • Bundles</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
