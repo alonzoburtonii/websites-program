@@ -43,11 +43,11 @@
 				AAAAEsAAAKABAAAAAAAAENAAAAQAAAAAAAAA
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/alonzoburtonii/Library/Mobile%20Documents/iCloud~com~barebones~bbedit/Documents/shared/</string>
+				<string>file:///Users/alonzoburtonii/.Trash/shared/</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./shared</string>
+				<string>../../.Trash/shared</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
