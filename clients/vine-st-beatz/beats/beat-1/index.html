@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beat 1 | Vine St Beatz</title>
+  <meta name="description" content="Beat 1 — preview and licensing details placeholder." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="logo" href="/">Vine St Beatz</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/beats/" aria-current="page">Browse Beats</a>
+        <a href="/book/">Book a Session</a>
+      </nav>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="/beats/" aria-current="page">Browse Beats</a>
+      <a href="/book/">Book a Session</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero section">
+    <div class="container">
+      <h1>Beat 1</h1>
+      <p class="lead">Beat detail page placeholder — add audio preview + BPM + mood + licensing.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="/book/">Book a Session</a>
+        <a class="btn btn--ghost" href="/beats/">Back to Beats</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <h2>Preview</h2>
+        <p class="small">Replace with an embedded audio player or link.</p>
+        <h2 style="margin-top:14px;">Details</h2>
+        <ul>
+          <li>BPM: TBD</li>
+          <li>Mood: TBD</li>
+          <li>Style: TBD</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <small class="small">© <span id="year"></span> Vine St Beatz.</small>
+    <div class="small">Beats • Sessions • Collaboration</div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

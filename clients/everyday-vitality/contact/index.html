@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get Started | Everyday Vitality</title>
+  <meta name="description" content="Get started with Everyday Vitality. Share your goals and we’ll recommend next steps." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="logo" href="/">Everyday Vitality</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/services/">Services</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/" aria-current="page">Get Started</a>
+      </nav>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="/services/">Services</a>
+      <a href="/about/">About</a>
+      <a class="btn btn--primary" href="/contact/" aria-current="page">Get Started</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero section">
+    <div class="container">
+      <h1>Get Started</h1>
+      <p class="lead">Tell us your goals and what support you’re looking for.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form class="form" name="vitality-intake" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="vitality-intake" />
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+
+        <div class="field">
+          <label for="goals">Goals</label>
+          <textarea id="goals" name="goals" required placeholder="What are you hoping to improve? What’s challenging right now?"></textarea>
+        </div>
+
+        <button class="btn btn--primary" type="submit">Send</button>
+        <p class="small">By submitting, you agree we can contact you about next steps.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <small class="small">© <span id="year"></span> Everyday Vitality.</small>
+    <div class="small">Support • Balance • Momentum</div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a Consultation | Ambition Execution LLC</title>
+  <meta name="description" content="Book a consultation with Ambition Execution LLC. Share your goals and we’ll follow up with next steps." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="logo" href="/">Ambition Execution LLC</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/approach/">Approach</a>
+        <a href="/insights/">Insights</a>
+        <a class="btn btn--primary" href="/consultation/" aria-current="page">Book a Consultation</a>
+      </nav>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="/approach/">Approach</a>
+      <a href="/insights/">Insights</a>
+      <a class="btn btn--primary" href="/consultation/" aria-current="page">Book a Consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero section">
+    <div class="container">
+      <h1>Book a Consultation</h1>
+      <p class="lead">Share your context and goals — we’ll respond with recommended next steps.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form class="form" name="ambition-consultation" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="ambition-consultation" />
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+
+        <div class="field">
+          <label for="role">Role / Company (optional)</label>
+          <input id="role" name="role" autocomplete="organization-title" />
+        </div>
+
+        <div class="field">
+          <label for="topic">What are you working on?</label>
+          <textarea id="topic" name="topic" required placeholder="Briefly describe the challenge, goal, or decision."></textarea>
+        </div>
+
+        <button class="btn btn--primary" type="submit">Request Consultation</button>
+        <p class="small">By submitting, you agree we can contact you about scheduling.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <small class="small">© <span id="year"></span> Ambition Execution LLC.</small>
+    <div class="small">Position • Sequence • Execute</div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

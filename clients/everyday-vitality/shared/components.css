@@ -1,0 +1,44 @@
+/* Steps */
+.steps{ list-style:none; padding:0; margin:0; display:grid; gap: 12px; }
+.step{
+  padding: 16px;
+  border-radius: calc(var(--radius,16px) + 6px);
+  border: 1px solid color-mix(in srgb, var(--text, #111) 12%, transparent);
+  background: var(--bg, #fff);
+}
+
+/* Forms */
+.form{
+  display:grid; gap: 12px;
+}
+.field label{ display:block; font-weight: 700; margin-bottom: 6px; }
+.field input, .field textarea, .field select{
+  width:100%;
+  padding: 12px 12px;
+  border-radius: var(--radius, 16px);
+  border: 1px solid color-mix(in srgb, var(--text, #111) 18%, transparent);
+  background: var(--bg, #fff);
+}
+.field textarea{ min-height: 120px; resize: vertical; }
+
+.footer{
+  padding: 40px 0;
+  border-top: 1px solid color-mix(in srgb, var(--text, #111) 12%, transparent);
+}
+.footer-row{
+  display:flex; flex-direction:column; gap: 12px;
+}
+@media (min-width: 900px){
+  .footer-row{ flex-direction:row; align-items:center; justify-content:space-between; }
+}
+
+/* CTA band */
+.cta-band{
+  background: color-mix(in srgb, var(--brand, #2563eb) 10%, var(--bg,#fff));
+}
+.cta-band-row{
+  display:flex; flex-direction:column; gap: 14px;
+}
+@media (min-width: 900px){
+  .cta-band-row{ flex-direction:row; align-items:center; justify-content:space-between; }
+}

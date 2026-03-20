@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Youth Development | Burton Bro’s Basketball Academy</title>
+  <meta name="description" content="Youth basketball development program focused on fundamentals, confidence, and structured growth." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="logo" href="/">Basketball Training Hub</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/programs/" aria-current="page">Programs</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/">Contact Us</a>
+      </nav>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="/programs/" aria-current="page">Programs</a>
+      <a href="/about/">About</a>
+      <a class="btn btn--primary" href="/contact/">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero section">
+    <div class="container">
+      <h1>Youth Development</h1>
+      <p class="lead">Build foundations: footwork, ball-handling, shooting form, and game confidence.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="/contact/">Contact Us</a>
+        <a class="btn btn--ghost" href="/programs/">Back to Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>What to expect</h2>
+      <div class="card-grid">
+        <article class="card"><h3>Fundamentals first</h3><p class="small">Core mechanics and habits that stick.</p></article>
+        <article class="card"><h3>Structured drills</h3><p class="small">Repetition with feedback for improvement.</p></article>
+        <article class="card"><h3>Confidence building</h3><p class="small">Supportive environment for growth.</p></article>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h3>Good fit for</h3>
+        <p class="small">Players developing fundamentals and learning how to practice effectively.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <small class="small">© <span id="year"></span> Burton Bro’s Basketball Academy.</small>
+    <div class="small">Youth • Fundamentals • Confidence</div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

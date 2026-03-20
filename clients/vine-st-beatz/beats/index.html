@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Browse Beats | Vine St Beatz</title>
+  <meta name="description" content="Browse beats from Vine St Beatz. Preview styles and request licensing or a custom production direction." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="logo" href="/">Vine St Beatz</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/beats/" aria-current="page">Browse Beats</a>
+        <a href="/book/">Book a Session</a>
+      </nav>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="/beats/" aria-current="page">Browse Beats</a>
+      <a href="/book/">Book a Session</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero section">
+    <div class="container">
+      <h1>Browse Beats</h1>
+      <p class="lead">Preview beats and find the right vibe — then book a session to bring it to life.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="/book/">Book a Session</a>
+        <a class="btn btn--ghost" href="/">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+        <a class="card" href="/beats/beat-1/"><h3>Beat 1</h3><p class="small">Preview + details placeholder.</p></a>
+        <a class="card" href="/beats/beat-2/"><h3>Beat 2</h3><p class="small">Preview + details placeholder.</p></a>
+        <div class="card"><h3>More beats</h3><p class="small">Add additional beats here as they’re uploaded.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <small class="small">© <span id="year"></span> Vine St Beatz.</small>
+    <div class="small">Beats • Sessions • Collaboration</div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

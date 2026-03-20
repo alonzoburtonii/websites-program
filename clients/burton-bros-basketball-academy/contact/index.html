@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Burton Bro’s Basketball Academy</title>
+  <meta name="description" content="Contact Burton Bro’s Basketball Academy about training programs, camps, and scheduling." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="logo" href="/">Basketball Training Hub</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/programs/">Programs</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/" aria-current="page">Contact Us</a>
+      </nav>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="/programs/">Programs</a>
+      <a href="/about/">About</a>
+      <a class="btn btn--primary" href="/contact/" aria-current="page">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero section">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p class="lead">Tell us the player’s age, goals, and availability — we’ll recommend next steps.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form class="form" name="basketball-intake" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="basketball-intake" />
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+
+        <div class="field">
+          <label for="player">Player Age / Level</label>
+          <input id="player" name="player" placeholder="Example: 13, middle school" required />
+        </div>
+
+        <div class="field">
+          <label for="goals">Goals / Notes</label>
+          <textarea id="goals" name="goals" required placeholder="What do you want to improve? Any timeline or tryouts?"></textarea>
+        </div>
+
+        <button class="btn btn--primary" type="submit">Send</button>
+        <p class="small">By submitting, you agree we can contact you about training options.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <small class="small">© <span id="year"></span> Burton Bro’s Basketball Academy.</small>
+    <div class="small">Programs • Camps • Clinics</div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

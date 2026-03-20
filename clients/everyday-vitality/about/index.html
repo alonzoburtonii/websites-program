@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Everyday Vitality</title>
+  <meta name="description" content="About Everyday Vitality — a practical approach to wellness with realistic habits and sustainable progress." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="logo" href="/">Everyday Vitality</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/services/">Services</a>
+        <a href="/about/" aria-current="page">About</a>
+        <a class="btn btn--primary" href="/contact/">Get Started</a>
+      </nav>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="/services/">Services</a>
+      <a href="/about/" aria-current="page">About</a>
+      <a class="btn btn--primary" href="/contact/">Get Started</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero section">
+    <div class="container">
+      <h1>About</h1>
+      <p class="lead">Wellness that fits real life — calm, realistic, and sustainable.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="/contact/">Get Started</a>
+        <a class="btn btn--ghost" href="/services/">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Our philosophy</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Realistic habits</strong> that work with your schedule.</li>
+          <li><strong>Supportive guidance</strong> that reduces overwhelm.</li>
+          <li><strong>Progress you can feel</strong> through consistency.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <small class="small">© <span id="year"></span> Everyday Vitality.</small>
+    <div class="small">Calm • Practical • Sustainable</div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

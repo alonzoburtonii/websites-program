@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sessions | Vine St Beatz</title>
+  <meta name="description" content="Recording sessions, production support, and creative collaboration options." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="logo" href="/">Vine St Beatz</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/beats/">Browse Beats</a>
+        <a href="/book/">Book a Session</a>
+      </nav>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="/beats/">Browse Beats</a>
+      <a href="/book/">Book a Session</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero section">
+    <div class="container">
+      <h1>Sessions</h1>
+      <p class="lead">Choose the session format that fits your goal — recording, production, or collaboration.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="/book/">Book a Session</a>
+        <a class="btn btn--ghost" href="/">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+        <article class="card"><h3>Recording Sessions</h3><p class="small">High-quality sessions tailored to your needs.</p></article>
+        <article class="card"><h3>Production & Beats</h3><p class="small">Get unique beats and professional production.</p></article>
+        <article class="card"><h3>Creative Collaboration</h3><p class="small">Bring your vision to life with experienced guidance.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <small class="small">© <span id="year"></span> Vine St Beatz.</small>
+    <div class="small">Sessions • Direction • Results</div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
