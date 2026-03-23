@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Experience | By Appointment Only</title>
+  <meta name="description" content="Learn how By Appointment Only approaches discretion, expectation-setting, and private request review." />
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <link rel="stylesheet" href="/shared/components.css" />
+  <link rel="stylesheet" href="/brand.css" />
+  <script defer src="/shared/components.js"></script>
+  <script defer src="/shared/motion.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="logo" href="/">By Appointment Only</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/experience/" aria-current="page">The Experience</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/request/">Request an Appointment</a>
+      </nav>
+      <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <a href="/experience/" aria-current="page">The Experience</a>
+      <a href="/about/">About</a>
+      <a class="btn btn--primary" href="/request/">Request an Appointment</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero section">
+    <div class="container">
+      <h1>The Experience</h1>
+      <p class="lead">A private, refined approach centered on discretion, professionalism, and aligned expectations.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="/request/">Request an Appointment</a>
+        <a class="btn btn--ghost" href="/">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+        <article class="card"><h3>Discretion</h3><p class="small">Privacy and respectful communication are prioritized from the start.</p></article>
+        <article class="card"><h3>Clarity</h3><p class="small">Expectations are set before any follow-up is confirmed.</p></article>
+        <article class="card"><h3>Control</h3><p class="small">All requests are reviewed individually and responded to selectively.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <small class="small">© <span id="year"></span> By Appointment Only.</small>
+    <div class="small">Discretion • Professionalism • Control</div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
