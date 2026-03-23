@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Professional Production Sessions | Vine St Beatz</title>
-  <meta name="description" content="Browse beats or book a professional recording/production session. Creative collaboration with clear direction." />
+  <title>Basketball Training Hub | Burton Bro’s Basketball Academy</title>
+  <meta name="description" content="Skill-focused basketball training built on fundamentals. Programs for youth, competitive players, adults, and camps." />
 
   <link rel="stylesheet" href="/shared/base.css" />
   <link rel="stylesheet" href="/shared/components.css" />
@@ -19,59 +19,93 @@
 <header class="site-header">
   <div class="container">
     <div class="header-row">
-      <a class="logo" href="/">Vine St Beatz</a>
+      <a class="logo" href="/">Basketball Training Hub</a>
 
       <nav class="nav" aria-label="Primary">
-        <a href="/beats/">Browse Beats</a>
-        <a href="/book/">Book a Session</a>
+        <a href="/programs/">Programs</a>
+        <a href="/about/">About</a>
+        <a class="btn btn--primary" href="/contact/">Contact Us</a>
       </nav>
 
       <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
     </div>
 
     <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
-      <a href="/beats/">Browse Beats</a>
-      <a href="/book/">Book a Session</a>
+      <a href="/programs/">Programs</a>
+      <a href="/about/">About</a>
+      <a class="btn btn--primary" href="/contact/">Contact Us</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
+  <!-- HERO (video placeholder like comp) -->
   <section class="hero section">
     <div class="container">
-      <p class="small">Professional Production Sessions</p>
-      <h1>Designed for artists who want clarity and direction.</h1>
+      <h1>Train With Purpose. Play With Confidence.</h1>
+      <p class="lead">Skill-focused basketball training built on fundamentals and structured development.</p>
+
+      <div class="hero-media" aria-hidden="true" style="margin-top:14px;">
+        <!-- Replace with: <video muted autoplay loop playsinline ...> -->
+      </div>
 
       <div class="cta-row" style="margin-top:14px;">
-        <a class="btn btn--ghost" href="/beats/">Browse Beats</a>
-        <a class="btn btn--primary" href="/book/">Book a Session</a>
+        <a class="btn btn--ghost" href="/contact/">Contact Us</a>
+        <a class="btn btn--primary" href="/programs/">View Programs</a>
       </div>
     </div>
   </section>
 
+  <!-- Training Programs -->
   <section class="section">
     <div class="container">
-      <h2>Sessions Available</h2>
+      <h2>Training Programs</h2>
       <div class="card-grid">
-        <article class="card"><h3>Recording Sessions</h3><p class="small">High-quality sessions tailored to your needs.</p></article>
-        <article class="card"><h3>Production & Beats</h3><p class="small">Unique beats and professional production.</p></article>
-        <article class="card"><h3>Creative Collaboration</h3><p class="small">Work alongside seasoned pros to bring your vision to life.</p></article>
+        <a class="card" href="/programs/youth-development/"><h3>Youth Development</h3><p class="small">Focus on fundamentals and confidence.</p></a>
+        <a class="card" href="/programs/competitive-teen/"><h3>Competitive / Teen Training</h3><p class="small">Prepare for school and competition.</p></a>
+        <a class="card" href="/programs/adult-skill-training/"><h3>Adult Skill Training</h3><p class="small">Refine your game and build consistency.</p></a>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <a href="/programs/camps-clinics/"><strong>Camps & Clinics</strong></a>
+        <p class="small">Specialized seasonal sessions and skill intensives.</p>
       </div>
     </div>
   </section>
 
+  <!-- Built on Fundamentals -->
   <section class="section section--alt">
     <div class="container">
-      <h2>What to Expect</h2>
-      <ol class="steps">
-        <li class="step"><h3>Step 1</h3><p class="small">Book your session</p></li>
-        <li class="step"><h3>Step 2</h3><p class="small">Collaborate & create</p></li>
-        <li class="step"><h3>Step 3</h3><p class="small">Leave with direction</p></li>
-      </ol>
+      <h2>Built on Fundamentals</h2>
+      <div class="card-grid">
+        <article class="card"><h3>Experienced coaching</h3><p class="small">Coaches passionate about player development.</p></article>
+        <article class="card"><h3>Structured development</h3><p class="small">Plans focused on long-term improvement.</p></article>
+        <article class="card"><h3>Supportive environment</h3><p class="small">A safe space to learn and grow.</p></article>
+      </div>
+    </div>
+  </section>
 
-      <div class="cta-row" style="margin-top:14px;">
-        <a class="btn btn--ghost" href="/beats/">Browse Beats</a>
-        <a class="btn btn--primary" href="/book/">Book a Session</a>
+  <!-- How Training Works -->
+  <section class="section">
+    <div class="container">
+      <h2>How Training Works</h2>
+      <ol class="steps">
+        <li class="step"><h3>Step 1</h3><p class="small">Evaluate skill level</p></li>
+        <li class="step"><h3>Step 2</h3><p class="small">Train with intention</p></li>
+        <li class="step"><h3>Step 3</h3><p class="small">Build confidence over time</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="container cta-band-row">
+      <div>
+        <h2>Ready to train?</h2>
+        <p class="lead">Contact us or explore programs to find the best fit.</p>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn--ghost" href="/contact/">Contact Us</a>
+        <a class="btn btn--primary" href="/programs/">View Programs</a>
       </div>
     </div>
   </section>
@@ -79,8 +113,8 @@
 
 <footer class="footer">
   <div class="container footer-row">
-    <small class="small">© <span id="year"></span> Vine St Beatz.</small>
-    <div class="small">Beats • Sessions • Collaboration</div>
+    <small class="small">© <span id="year"></span> Burton Bro’s Basketball Academy.</small>
+    <div class="small">Fundamentals • Development • Confidence</div>
   </div>
 </footer>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
