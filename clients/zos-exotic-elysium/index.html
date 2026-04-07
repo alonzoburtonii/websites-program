@@ -3,32 +3,35 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Experience | By Appointment Only</title>
-  <meta name="description" content="Learn how By Appointment Only approaches discretion, expectation-setting, and private request review." />
+  <title>A Curated Experience for Members Only | Zo’s Exotic Elysium</title>
+  <meta name="description" content="A private, invitation-based environment for a select audience. Apply for membership to request access." />
 
   <link rel="stylesheet" href="/shared/base.css" />
   <link rel="stylesheet" href="/shared/components.css" />
   <link rel="stylesheet" href="/brand.css" />
+
   <script defer src="/shared/components.js"></script>
   <script defer src="/shared/motion.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
   <div class="container">
     <div class="header-row">
-      <a class="logo" href="/">By Appointment Only</a>
+      <a class="logo" href="/">Zo’s Exotic Elysium</a>
       <nav class="nav" aria-label="Primary">
-        <a href="/experience/" aria-current="page">The Experience</a>
-        <a href="/about/">About</a>
-        <a class="btn btn--primary" href="/request/">Request an Appointment</a>
+        <a href="/membership/">Membership</a>
+        <a href="/login/">Login</a>
+        <a class="btn btn--primary" href="/apply/">Apply for Membership</a>
       </nav>
       <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav">Menu</button>
     </div>
+
     <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile">
-      <a href="/experience/" aria-current="page">The Experience</a>
-      <a href="/about/">About</a>
-      <a class="btn btn--primary" href="/request/">Request an Appointment</a>
+      <a href="/membership/">Membership</a>
+      <a href="/login/">Login</a>
+      <a class="btn btn--primary" href="/apply/">Apply for Membership</a>
     </nav>
   </div>
 </header>
@@ -36,30 +39,52 @@
 <main id="main">
   <section class="hero section">
     <div class="container">
-      <h1>The Experience</h1>
-      <p class="lead">A private, refined approach centered on discretion, professionalism, and aligned expectations.</p>
+      <h1>A Curated Experience for Members Only.</h1>
+      <p class="lead">Zo’s Exotic Elysium offers a private, invitation-based environment designed for a select audience.</p>
       <div class="cta-row">
-        <a class="btn btn--primary" href="/request/">Request an Appointment</a>
-        <a class="btn btn--ghost" href="/">Back to Home</a>
+        <a class="btn btn--primary" href="/apply/">Apply for Membership</a>
+        <a class="btn btn--ghost" href="/membership/">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <h2>What Membership Offers</h2>
+      <div class="card">
+        <ul>
+          <li>Private access</li>
+          <li>Clear expectations</li>
+          <li>Discretion prioritized</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="card-grid">
-        <article class="card"><h3>Discretion</h3><p class="small">Privacy and respectful communication are prioritized from the start.</p></article>
-        <article class="card"><h3>Clarity</h3><p class="small">Expectations are set before any follow-up is confirmed.</p></article>
-        <article class="card"><h3>Control</h3><p class="small">All requests are reviewed individually and responded to selectively.</p></article>
+      <h2>Membership Access</h2>
+      <div class="card">
+        <p class="small">Access is granted upon approval. Guidelines and terms apply.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="container cta-band-row">
+      <div>
+        <h2>Interested in access?</h2>
+        <p class="lead">Submit an application for membership review.</p>
+      </div>
+      <a class="btn btn--primary" href="/apply/">Apply for Membership</a>
     </div>
   </section>
 </main>
 
 <footer class="footer">
   <div class="container footer-row">
-    <small class="small">© <span id="year"></span> By Appointment Only.</small>
-    <div class="small">Discretion • Professionalism • Control</div>
+    <small class="small">© <span id="year"></span> Zo’s Exotic Elysium.</small>
+    <div class="small">Private • Curated • Members Only</div>
   </div>
 </footer>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
